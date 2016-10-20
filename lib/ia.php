@@ -6,8 +6,8 @@ class ia
 {
 
 // Declaración de una propiedad
-  public $columna='';
-  public $fila='';
+  public $columna=0;
+  public $fila=0;
 
 
 // Declaración de un método
@@ -40,15 +40,17 @@ public function getColumna(){
     }
     elseif($fil>3){
       $this->fila=3;
-    }else{
+    }
+    else{
       $this->fila=$fil;
     }
+    }
+public function randomPos(){
+  $this->columna=rand(0,3);
+
+  $this->fila=rand(0,3);
+
 }
-
-
-
-
-
 
 }
  ?>
